@@ -1,0 +1,122 @@
+@import url("https://fonts.googleapis.com/css?family=Lovers+Quarrel&display=swap");
+@import url("https://fonts.googleapis.com/css?family=Love+Ya+Like+A+Sister&display=swap");
+* {
+  margin: 0;
+  padding: 0;
+}
+
+.landing-page-container {
+  background-image: url("./background.jpg");
+  background-size: cover;
+  width: 100vw;
+  min-height: 100vh;
+  overflow: hidden;
+  z-index: -2;
+}
+
+.landing-page-info {
+  width: 100vw;
+  height: 100vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  align-content: flex-end;
+  z-index: 15 !important;
+}
+
+.title {
+  z-index: 100 !important;
+  text-align: right;
+}
+.title h1 {
+  font-family: "Love Ya Like A Sister", cursive;
+  color: #ffffff;
+  font-size: 4rem;
+}
+.title h1 span {
+  font-size: 6rem;
+  color: #ffffff;
+  text-decoration: underline;
+}
+.title p {
+  font-family: "Lovers Quarrel", cursive;
+  color: #ffffff;
+  font-size: 3.5rem;
+  text-align: center;
+}
+
+.btn-match {
+  margin-top: 4rem;
+  z-index: 100;
+}
+
+.btn-match {
+  position: relative;
+  padding: 1.4rem 4.2rem;
+  padding-right: 3.1rem;
+  font-size: 1.4rem;
+  color: white;
+  letter-spacing: 1.1rem;
+  text-transform: uppercase;
+  transition: all 600ms cubic-bezier(0.77, 0, 0.175, 1);
+  cursor: pointer;
+  user-select: none;
+  z-index: 100;
+}
+
+.btn-match:before,
+.btn-match:after {
+  content: "";
+  position: absolute;
+  transition: inherit;
+  z-index: -1;
+}
+
+.btn-match:hover {
+  color: #380846;
+  transition-delay: 0.6s;
+}
+
+.btn-match:hover:before {
+  transition-delay: 0s;
+}
+
+.btn-match:hover:after {
+  background: #ffffff;
+  transition-delay: 0.4s;
+}
+
+.btn-effect:before,
+.btn-effect:after {
+  top: 0;
+  width: 0;
+  height: 100%;
+}
+
+.btn-effect:before {
+  right: 0;
+  border: 1px solid #ffffff;
+  border-left: 0;
+  border-right: 0;
+}
+
+.btn-effect:after {
+  left: 0;
+}
+
+.btn-effect:hover:before,
+.btn-effect:hover:after {
+  width: 100%;
+}
+
+.overlay {
+  position: absolute;
+  background-color: #380846;
+  width: 100vw;
+  height: 100vh;
+  top: 0;
+  left: 0;
+  z-index: 1;
+  opacity: 0.8;
+}

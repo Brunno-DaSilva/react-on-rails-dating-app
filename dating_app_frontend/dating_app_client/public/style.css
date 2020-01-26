@@ -1,0 +1,42 @@
+/* for development - check layout */
+/* comment out */
+/* header, div, main, nav, aside, footer {
+  border: 1px solid red;
+} */
+
+@import url("https://fonts.googleapis.com/css?family=Rock+Salt&display=swap");
+@import url("https://fonts.googleapis.com/css?family=Shadows+Into+Light+Two&display=swap");
+@import url("https://fonts.googleapis.com/css?family=Titillium+Web&display=swap");
+
+:root {
+  --main-bg: #343d46;
+  --color-light: #f7f4f4;
+  --color-light-gray: #a7adba;
+  --color-title: #6a7687;
+  --color-steal-blue: #9dc1d9;
+  --details-light-blue: #bee0ea;
+  --base: #2b498b;
+  --dark-font-color-title: #173f5f;
+  --nave-light-blue: #20639b;
+  --teal-green: #3caea3;
+  --farting-yellow: #f6d55c;
+  --laranja-orange: #ed553b;
+  --light-font-color: #e5f2fc;
+  --light-font-color-title: #c9dded;
+  --gray-neutral-color: #63717d;
+}
+* {
+  margin: 0;
+  padding: 0;
+}
+
+@media (min-width: 768px) {
+  .container {
+    flex-direction: row;
+    flex: 1;
+  }
+  nav,
+  aside {
+    flex: 0 0 12em;
+  }
+}
